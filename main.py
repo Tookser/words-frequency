@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 '''Script counting some stats on word frequency'''
-FILE_IN = 'google-10000-english.txt'
+FILE_IN = 'google-10000-english/google-10000-english.txt'
 FILE_OUTPUT = 'output.txt'
 
 
@@ -44,7 +44,7 @@ def create_hysto(words):
     import matplotlib.pyplot as plt
 
     plt.bar(x,y)
-    plt.title('Mean length by word frequency')
+    plt.title('Mean length by word frequency for {len(words)} first words')
     plt.xlabel('Range (*100)')
     plt.ylabel('Mean length')
     plt.show()
